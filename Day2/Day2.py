@@ -1,5 +1,132 @@
 #data types ,controls
+x=1
+y=2
+print(x,y)
+x,y=y,x
+print(x,y)
+'''
+print(x,y)
+temp=y#2
+y=x#1
+x=temp
+print(x,y)
+
+#list,tuple,dict
+# tuple same list
+t=1,3
+print(type(t),t)
+x,y=t
+print(x,y)
+
+t=(1,)
+print(t,type(t))
+
+l=[1,2]
+l[0]='one'
+print(l)
+t=(1,1.1,True,{},(),[],'dfkdkfl')
+#t[0]='fjldkjflkdsfj'
+print(t.count(1))
+
+print(t,type(t))
+print(t[2:4])
+print(len(t))
+print(t[7])
+
+#[value iteration condition]
+print([month for month in range(1,13) if(month%2==0)])
+
+l=[]
+for month in range(1,13):
+    if(month%2==0):
+        l.append(month)
+print(l)
+
+for month in range(1,13):
+    l.append(month)
+print(l)
+#print([value iteration])
+print([month for month in range(1,13)])
+
+#collection of values different data types
+oldserver=['server1','server2',[1,'d',True],(),{}]
+newserver=['ser2','ser4']
+#array list
+[[1,2],[2,5]]
+
+#oldserver.extend(newserver)
+newserver.extend(oldserver)
+print(oldserver)
+print(newserver)
+
+print(oldserver+newserver)#concat
+print(oldserver)
+print(newserver)
+print(newserver*3)#repeat
+
+l=[1,1.1,True,[2,3],'one']
+print(l.count(1))
+print(l.index(True))
+print(1==True)
+print(True==int(1))
+print(l)
+
+#l.remove('True')
+print(1==True)
+l.pop()
+l.pop(2)
+l.append((1,2))
+l.insert(2,'test')
+print(type(l))
+for x in enumerate(l):
+    print(x,type(x))
+
+l[0]='2'
+#l[11]='sdjsdlk'
+print(l,len(l))
+
+print(l[1],type(l[1]))
+print(l[1:3])
+print(l[1:])
+print(l[:4])
+print(l[4:1:-1])
+
+print(l,type(l))
+print(len(l))
+#single line comment
+"""
+kfdslk;lf
+k;kdf;dsf
+"""
+
+
+
+
 #loop
+#while(condtiion):
+#
+count=0
+while(count>3):
+    input('enter num')
+    count-=1
+
+
+flag='y'
+while(flag.lower()=='y'):
+    input('enter num')
+    flag=input('enter y to cont. else enter n')
+
+
+
+
+for i in range(0,3):
+    input('enter num')
+x,y=(1,3)
+print(x,y)
+enumerate('ai')#[(0,'a'),(1,'i')]
+for x in enumerate('ai'):
+    print(x)
+
 for num in range(5):
     if(num==2):
         #break
@@ -8,7 +135,7 @@ for num in range(5):
 else:
     #for all done
     print('end for ')
-'''
+
 for index,val in enumerate('ali ahmed'):
     print(type(index),type(val))
 

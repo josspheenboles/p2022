@@ -1,5 +1,6 @@
 l=input('enter list in formate ["name1","name2",.....,"name2"]')
 print(l)
+['ali','mohamed',"fatama"]
 '''
 name='global'#global var
 def outer():

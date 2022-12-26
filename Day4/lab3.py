@@ -1,3 +1,4 @@
+"""
 import os
 if(os.name!='nt'):
     if (os.getlogin() == 'root'):
@@ -6,7 +7,7 @@ else:
     if(os.getlogin()=='admini.'):
         os.chdir(r'H:\aswansysadmin122022\Day1')
         os.system('dir')
-"""
+
 import sys
 print(sys.argv)
 print(sys.argv[1]+sys.argv[2])
@@ -191,3 +192,28 @@ print(dictnames)
 
 print({name[0]:[name] for name in names })
 """
+#['ahmed','ali',"fatma"]
+#input  from user
+inputlist=input('''enter ['ahmed','ali',"fatma"]''')#.replace('[','').replace(']','').replace('"','').replace("'",'').split(',')
+#clean str remove [],',"
+inputlist=inputlist.replace('[','').replace(']','').replace('"','').replace("'",'')
+#split , [name1,name2]
+names=inputlist.split(',')
+#declare dict of names
+dictnames={}
+#loop list of names
+for name in names:
+    if(name[0] in dictnames):
+        #append name in dict
+        dictnames[name[0]+'1']=[name]
+    else:
+        dictnames[name[0]]=[name]
+    #print(dictnames)
+#print dict
+print(dictnames)
+
+
+print({name[0]:[name] for name in names })
+
+#write(r'c:\asd.txt','hi')
+#write(r'c:\asd.txt',['hi','system admin aswan','q4','2022'])

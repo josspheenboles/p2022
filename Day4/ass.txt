@@ -1,5 +1,0 @@
-function read (path) return content
-function write(path,content)
-function update (path,content)
-
-Bounce ---->module fileoperation & using 

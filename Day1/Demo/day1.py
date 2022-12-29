@@ -1,8 +1,16 @@
+#print(   ' '*2+'*',    ' '+'*'*2,    '*'*3,sep='\n')
+length=int(input('enter length'))
+for x in range(1,length+1):
+    print(''*length-x+'*'*x)
+'''
 #date msg user
 str1='{date} msg {user} {date}'
 print(str1.format(user='ali',date='28-12-2022'))
 print(str1.format(user='ali',date='29-12-2022'))
-'''
+leng=int(input('enter height'))
+for i in range(1,leng+1):
+    print(' '*(leng-i),'*'*i)
+
 print(str1.format('28-12-2022','ali'))
 print(str1.format('ali','28-12-2022'))
 

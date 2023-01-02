@@ -1,8 +1,34 @@
+str_list = input()
+lis = []
+ind = []
+for index, character in enumerate(str_list):
+    if character == "'" or character == '"':
+        ind.append(index)
+        if str_list[index + 1] == ",":
+            if str_list[index + 2] == " " or str_list[index + 2] == "'" or str_list[index + 2] == '"':
+                lis.append(str_list[ind[0] + 1:index])
+                ind = []
+        elif str_list[index + 1] == " ":
+            if str_list[index + 2] == ",":
+                if str_list[index + 3] == " " or str_list[index + 2] == "'" or str_list[index + 2] == '"':
+                    lis.append(str_list[ind[0] + 1:index])
+                    ind = []
+
+sorte = {}
+
+for name in lis:
+    ch1 = name[0]
+    if ch1 not in sorte:
+        sorte[ch1] = []
+    sorte[ch1].append(name)
+
+print(sorte)
+
+'''
 import os
 import subprocess
 os.popen('dir').read()
 subprocess('dir')
-'''
 import math
 print(math.pi)
 math.pow(2,2)#2**2

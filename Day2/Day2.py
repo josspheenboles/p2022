@@ -1,4 +1,25 @@
+statment=input('enter statment')
+lett=input('enter letter')
+l=[]
+for x in enumerate(statment):
+    if(x[1]==lett):
+        l.append(x[0])
+print(l)
+
+name='rafaat'
+
+for ch in name:#i=012 name[1]
+    print(ch)
+
+
+
+
+
+
+
+
 '''
+
 #structure list,tuple,dict
 #list collection of values has differernt data types
 opensource=['python','shell',1,True,'python']

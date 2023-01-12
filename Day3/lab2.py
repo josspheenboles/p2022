@@ -1,3 +1,99 @@
+def calcarear(shapename,dim1,dim2):
+    pass
+
+#get shape naem from user,dim1,dim2
+
+#call funct
+name='ahmed ali'
+for index,letter in enumerate(name):#[(index,char),(),,,,()]
+    #print(x[0],x[1],x)
+    print(index,letter)
+x,y=(1,2)
+print(x,y)
+'''
+count=0
+for letter in name:
+    print(letter,count,end=' ')
+    count+=1
+#range(start=0,end,step=1)end must be passed
+def test(z,x=1,y=2):
+    print(x+y+z)
+test(10)
+test(10,20)
+test(10,20,30)
+
+error='plapl {msg} xxx {date} xxx {date}'
+print(error.format(msg='access denied',date='10-1-2023'))
+#funname(key=value)
+def test(**arg1):
+    print(type(arg1))
+    print(arg1)
+test(x=1,v=30)
+
+
+#{key:value}
+error='plapl {msg} xxx {date} xxx {date}'
+print(error)
+def convertstrtofloat(x):
+    if(x.isdigit()):
+        return  float(x)
+
+age=input('enter age')#str
+age=convertstrtofloat(age)
+gpa=input('enter gpa')
+gpa=convertstrtofloat(gpa)
+
+def convertstrtofloat(n1):#must pass value
+    if (n1.isdigit()):
+        return float(n1)
+    else:
+        print('number  must be digit')
+        return None
+#calling
+print(convertstrtofloat('10A'))
+n1=input('enter num1')
+n1=convertstrtofloat(n1)
+n2=input('enter num1')
+n2=convertstrtofloat(n2)
+if(n1 is not None and n2 is not None):
+    print(n1+n2)
+else:
+    print('number is not correct')
+
+
+
+
+
+n1='10'
+n2='10A'
+def converfloat(x):
+    if(x.isdigit()):
+        x=float(x)
+    else:
+        print('must be digit ')
+#calling
+converfloat(n1)
+converfloat(n2)
+
+def convertstrtofloat(n1):
+    if (n1.isdigit()):
+        return float(n1)
+    else:
+        print('number  must be digit')
+        return None
+
+convertstrtofloat('10')
+convertstrtofloat('100#A')
+if(n1.isdigit()):
+    n1=float(n1)
+else:
+    print('n1 must be digit')
+
+if(n2.isdigit()):
+    n2=float(n2)
+else:
+    print('n2 must be digit')
+
 #function
 error='{ahmed},{date}'
 print(error.format(ahmed='psldpspld',date='sdd'))
@@ -13,7 +109,7 @@ d={'id':1,'name':'ali'}
 print(d.values())
 print(d.keys())
 
-'''
+
 def mysum(*values):#as tuple
     print(type(values))
     print(values)
@@ -61,24 +157,6 @@ else:
     print('number must be digit')
 
 #defination function
-def convertstrtofloat(n1):
-    if (n1.isdigit()):
-        return float(n1)
-    else:
-        print('number  must be digit')
-        return None
-#calling
-print(convertstrtofloat('10A'))
-
-n1=input('enter num1')
-n1=convertstrtofloat(n1)
-n2=input('enter num1')
-n2=convertstrtofloat(n2)
-if(n1 is not None and n2 is not None):
-    print(n1+n2)
-else:
-    print('number is not correct')
-
 
 
 #handel error
